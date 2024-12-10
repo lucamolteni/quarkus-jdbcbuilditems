@@ -20,7 +20,6 @@ public class ExampleTest {
 	@RegisterExtension
 	static final QuarkusUnitTest config = new QuarkusUnitTest()
 			.withConfigurationResource("application.properties")
-			.setForcedDependencies( List.of( Dependency.of( "io.quarkus", "quarkus-agroal", Version.getVersion())) )
 			.setForcedDependencies( List.of( Dependency.of( "io.quarkus", "quarkus-jdbc-h2", Version.getVersion())) );
 
 
